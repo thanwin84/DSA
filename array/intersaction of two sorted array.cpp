@@ -41,4 +41,4 @@ class Solution{
           return ans;
       }
 };
-// tc: O(max(n1, n2)) and space: O(1)
+// tc: O(n1 + n2) and space: O(1)
