@@ -18,6 +18,11 @@ public:
 };
 // tc: O(n) and space: O(n)
 // O(d) + O(n - d) + O(d) => O(n + d)
+//Step 1: Reverse the last k elements of the array
+
+// Step 2: Reverse the first n-k elements of the array.
+
+// Step 3: Reverse the whole array.
 class Solution {
 public:
     void rotate(vector<int>& nums, int k) {
