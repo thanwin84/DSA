@@ -4,9 +4,11 @@ public:
     void rotate(vector<int>& nums, int k) {
         k = k % nums.size();
         vector<int> tempArray;
+        // keep the left part(array which needs to shifted to the right) array in the temp
         for (int i = nums.size() - k; i < nums.size(); i++) {
             tempArray.push_back(nums[i]);
         }
+        // shift all elements starting from 0 from nums.size() -k to the right at i-k distance place
         for (int i = nums.size() - 1; i >= k; i--) {
             nums[i] = nums[i - k];
         }
