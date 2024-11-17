@@ -8,7 +8,7 @@ public:
                 count++;
                 maxValue = max(count, maxValue);
             }
-            else if (nums[i] == 0){
+            else {
                 count = 0;
             }
         }
