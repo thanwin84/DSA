@@ -17,7 +17,7 @@ public:
     }
 };
 // tc: O(n^2)
-
+// we can also solve it using unordered_map and map. if we use unordered map tc will be o(n) and if we use map, tc will be O(nlogn)
 //using xor
 class Solution {
 public:
