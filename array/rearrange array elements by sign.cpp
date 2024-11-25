@@ -17,7 +17,7 @@ public:
         return nums;
     }
 };
-// time: O(2n) and space: O(N)
+// time: O(n + n/2) and space: O(N)
 
 // optimal approach - single pass
 class Solution {
@@ -82,3 +82,4 @@ public:
         return result;
     }
 };
+// time: O(2n)
