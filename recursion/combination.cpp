@@ -1,6 +1,7 @@
 class Solution {
     void solve(vector<int>& candidates, vector<vector<int>>& output, vector<int>&temp, int target, int curr){
         if (curr == candidates.size()){
+            // we got a match
             if (target == 0){
                 output.push_back(temp);
                 return;
@@ -9,9 +10,11 @@ class Solution {
         }
         
         if (candidates[curr] <= target){
+            // include the current element
             temp.push_back(candidates[curr]);
             solve(candidates, output, temp, target - candidates[curr], curr);
             temp.pop_back();
+            // discard the current element to explore other path
         }
         solve(candidates, output, temp, target, curr + 1);
 
